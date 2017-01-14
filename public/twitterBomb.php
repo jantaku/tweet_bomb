@@ -16,7 +16,7 @@ $connection = new TwitterOAuth($consumerKey, $consumerSecret, $accessToken, $acc
 // タイムラインを取得
 // 対象のユーザIDと取得するツイート数を指定
 // スクリーンネームからユーザIDを調べるWebサイト => https://syncer.jp/twitter-screenname-userid-converter
-$timeline = $connection->get('statuses/user_timeline', ['user_id' => '1183218709', 'count' => 20]);
+$timeline = $connection->get('statuses/user_timeline', ['user_id' => '', 'count' => ]);
 
 // 連想配列に変換
 $timeline = json_decode(json_encode($timeline), true);
